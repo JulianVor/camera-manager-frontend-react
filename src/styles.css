@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import 'material-icons/iconfont/material-icons.scss';*/
+
+/* .table-row {
+  cursor: pointer;
+} */
+
+/* .table-row:hover {
+  background-color: cadetblue;
+} */
+
+/* .selected {
+  background-color: #7ad8ff !important;
+} */
+
+.btn-minimal {
+    --border-color: transparent;
+    --background-color: transparent;
+    /* --color: green; */
+    /* --box-shadow: transparent; */
+}
+
+.btn-minimal[aria-current],
+.btn-minimal:hover,
+.btn-minimal:active,
+.btn-minimal:focus {
+    --border-color: transparent;
+    --background-color: transparent;
+    /* --color: green; */
+    /* --box-shadow: transparent; */
+}
+
+.btn-minimal {
+    width: auto;
+    /* padding: 0.25rem 0.5rem; */ /* Minimaler Padding */
+    /* font-size: 0.75rem; */ /* Kleinere Schriftgröße */
+    /* min-width: auto; */ /* Entfernt die minimale Breite */
+}
+
+.image-container {
+    display: flex;
+    /* justify-content: right; */ /* Horizontale Zentrierung */
+    /* align-items: center; */ /* Vertikale Zentrierung */
+    height: 100%; /* Höhe des Containers auf 100% setzen */
+}
+
+img.row-logo {
+    max-height: 30px; /* Maximale Höhe der Bilder festlegen */
+    width: auto; /* Breite automatisch anpassen */
+}
+
+img.edit-logo {
+    max-height: 65px; /* Maximale Höhe der Bilder festlegen */
+    width: auto; /* Breite automatisch anpassen */
+}
+
+img.grid-logo {
+    max-height: 100px; /* Maximale Höhe der Bilder festlegen */
+    width: auto; /* Breite automatisch anpassen */
+}
