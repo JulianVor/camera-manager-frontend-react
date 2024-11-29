@@ -1,0 +1,94 @@
+div.grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10px; /* Optional: Abstand zwischen den Buttons */
+}
+
+button.grid-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    aspect-ratio: 1 / 0.5; /* Macht die Buttons quadratisch */
+    width: 100%; /* Stellt sicher, dass die Buttons die volle Breite der Zelle einnehmen */
+    max-width: 100%; /* Verhindert, dass die Buttons größer werden */
+    max-height: 100%; /* Verhindert, dass die Buttons größer werden */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Größenberechnung */
+    border: 0;
+}
+
+div.grid-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    aspect-ratio: 1 / 0.5; /* Macht die Buttons quadratisch */
+    width: 100%; /* Stellt sicher, dass die Buttons die volle Breite der Zelle einnehmen */
+    max-width: 100%; /* Verhindert, dass die Buttons größer werden */
+    max-height: 100%; /* Verhindert, dass die Buttons größer werden */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Größenberechnung */
+    border: 0;
+}
+
+div img {
+    max-height: 70%; /* Passt die Bildgröße an */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-container {
+    text-align: center;
+    background: var(--pico-h2-color);
+    border-radius: var(--pico-border-radius);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    /*color: #fff;*/
+    /*background-color: #007bff;*/
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.centered-container:hover {
+    animation: grow 0.3s forwards;
+}
+.centered-container:not(:hover) {
+    animation: shrink 0.1s forwards;
+}
+
+.centered-container:active {
+    background-color: #E0E3E7FF;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.centered-container h2 {
+    margin: 0;
+    color: var(--pico-background-color);
+}

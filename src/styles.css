@@ -16,6 +16,7 @@
 .btn-minimal {
     --border-color: transparent;
     --background-color: transparent;
+    --pico-color: var(--pico-h1-color);;
     /* --color: green; */
     /* --box-shadow: transparent; */
 }
@@ -26,6 +27,7 @@
 .btn-minimal:focus {
     --border-color: transparent;
     --background-color: transparent;
+    --pico-color: #bdbdbd;
     /* --color: green; */
     /* --box-shadow: transparent; */
 }
